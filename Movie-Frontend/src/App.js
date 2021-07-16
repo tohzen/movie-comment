@@ -55,12 +55,12 @@ export class App extends Component {
   render() {
     return (
       <>
-        <ToastContainer position="top-center" />
+        <ToastContainer position="top-center" />  {/* brings in our toast error message*/}
 
         <MainRouter
-          user={this.state.user}
-          handleUserLogin={this.handleUserLogin}
-          handleUserLogout={this.handleUserLogout}
+          user={this.state.user} // lets us use this variable as a child
+          handleUserLogin={this.handleUserLogin} // lets us use this function as a child
+          handleUserLogout={this.handleUserLogout} // lets us use this function as a child
         />
       </>
     );
